@@ -1,0 +1,9 @@
+flask
+pyngrok
+sentence-transformers
+scikit-learn
+keybert
+pandas
+matplotlib
+seaborn
+memory_profiler
