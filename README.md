@@ -1,20 +1,55 @@
 # News_Recommendation_system
 
-this system show to the user recommended news based on his prefrences and behavior. it uses the dataset MIND with content-based filter and keyword extractor models
+This AI-powered system recommends personalized news articles to users based on their interests and behavior. It leverages the [MIND dataset](https://msnews.github.io/) and provides recommendations using **content-based filtering** and **keyword-based extraction** models. It also includes a user-friendly interface built with Flask and ngrok
 
 ## Features
-1.it uses two models content-based filter and keyword extractor models 
-2. it offers interface with ngrok
-3. user can like dislik and bookmark , based on these behavior system generates recommended news 
-4. the owner can see the performance of the system 
-5. 
+1. **Dual Recommendation Models**:  
+   - *Content-Based Filtering* using Sentence Transformers  
+   - *Keyword-Based Matching* using KeyBERT  
+2.Real-Time Personalized Recommendations
+   - Recommends top 5 relevant news articles based on user input and preferences
+3. **Interactive Web Interface**:  
+   - Built with Flask and styled with TailwindCSS  
+   - Hosted via ngrok for public access in Colab or local environments  
+4. **User Behavior Tracking**:  
+   - Users can **like**, **dislike**, or **bookmark** news articles  
+   - Feedback is saved in user_data.json and used to improve future recommendations  
+5. **System Performance Dashboard**:  
+   - Admin can monitor satisfaction rate based on user feedback  
 
 ## How to run
-1. user first should clone the repositery 
-2. run requirements.txt
-3. download the dataset ()
-4. paste the path of dataset in  preprocess.py file and run it
-5. run recommender.py file 
-6. run app.py file.
+1. Clone the repository:
+   git clone https://github.com/your-username/news-recommender.git
+   cd news-recommender
+2. Install dependencies:
+   pip install -r requirements.txt
+4. download the dataset :
+   - Download MINDsmall_train from here https://msnews.github.io/
+   - Extract it inside the data/ folder
+5. Preprocess the dataset:
+   - Open and edit preprocess.py to set the correct dataset path
+   - Then run it to generate the requierd data
+6. Run the recommender pipeline :
+   python recommender.py
+7. Launch the app:
+   python app.py
+
+Note:
+You can run this project in Google Colab or your local machine.
+If running in Colab, use flask-ngrok to tunnel the app.
 
 ## GitHub structure
+news-recommender/
+│
+├── app.py                # Flask app with routes and UI
+├── recommender.py        # Model loading and recommendation logic
+├── preprocess.py         # Dataset extraction and preprocessing
+│
+├── data/                 # Folder for preprocessed data
+│   ├── news_preprocessed.csv
+│   ├── news_embeddings.pkl
+│   ├── news_keywords.pkl
+│
+├── user_data.json        # Stores user likes, dislikes, bookmarks
+├── requirements.txt      # List of dependencies
+├── README.md 
