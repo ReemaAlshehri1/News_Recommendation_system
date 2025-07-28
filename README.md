@@ -23,16 +23,19 @@ This AI-powered system recommends personalized news articles to users based on t
    git clone https://github.com/ReemaAlshehri/News_Recommendation_system.git
    cd News_Recommendation_system
 3. Install dependencies:
+   ```bash
    pip install -r requirements.txt
-4. download the dataset :
+5. download the dataset :
    - Download MINDsmall_train from here https://msnews.github.io/
    - Extract it inside the data/ folder
-5. Preprocess the dataset:
+6. Preprocess the dataset:
    - Open and edit preprocess.py to set the correct dataset path
    - Then run it to generate the requierd data
-6. Run the recommender pipeline :
+7. Run the recommender pipeline :
+   ```bash
    python recommender.py
-7. Launch the app:
+9. Launch the app:
+    ```bash
    python app.py
 
 Note:
