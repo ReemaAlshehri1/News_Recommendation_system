@@ -51,6 +51,6 @@ If running in Colab, use flask-ngrok to tunnel the app.
  ├── README.md # Project documentation
  ├── user_data.json # Stores user likes, dislikes, bookmarks 
  ├── data/ # Folder for preprocessed data
-    │ ├── news_preprocessed.csv # Cleaned and tokenized articles
-    │ ├── news_embeddings.pkl # Embeddings for content-based filtering 
-    │ └── news_keywords.pkl # Extracted keywords for keyword-based matching </pre>
+     ├── news_preprocessed.csv # Cleaned and tokenized articles
+     ├── news_embeddings.pkl # Embeddings for content-based filtering 
+     └── news_keywords.pkl # Extracted keywords for keyword-based matching </pre>
