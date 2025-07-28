@@ -19,10 +19,10 @@ This AI-powered system recommends personalized news articles to users based on t
 
 ## How to run
 1. Clone the repository:
-   git clone https://github.com/ReemaAlshehri/News_Recommendation_system
-.git
-   cd news-recommender
-2. Install dependencies:
+   ```bash
+   git clone https://github.com/ReemaAlshehri/News_Recommendation_system.git
+   cd News_Recommendation_system
+3. Install dependencies:
    pip install -r requirements.txt
 4. download the dataset :
    - Download MINDsmall_train from here https://msnews.github.io/
