@@ -6,7 +6,7 @@ This AI-powered system recommends personalized news articles to users based on t
 1. **Dual Recommendation Models**:  
    - Content-Based Filtering* using Sentence Transformers  
    - Keyword-Based Matching using KeyBERT  
-2.**Real-Time Personalized Recommendations**:
+2. **Real-Time Personalized Recommendations**:
    - Recommends top 5 relevant news articles based on user input and preferences
 3. **Interactive Web Interface**:  
    - Built with Flask and styled with TailwindCSS  
