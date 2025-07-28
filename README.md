@@ -40,17 +40,4 @@ You can run this project in Google Colab or your local machine.
 If running in Colab, use flask-ngrok to tunnel the app.
 
 ## GitHub structure
-news-recommender/
-│
-├── app.py                # Flask app with routes and UI
-├── recommender.py        # Model loading and recommendation logic
-├── preprocess.py         # Dataset extraction and preprocessing
-│
-├── data/                 # Folder for preprocessed data
-│   ├── news_preprocessed.csv
-│   ├── news_embeddings.pkl # To use by Content-Based Filtering
-│   ├── news_keywords.pkl # To use by Keyword-Based Matching 
-│
-├── user_data.json        # Stores user likes, dislikes, bookmarks
-├── requirements.txt      # List of dependencies
-├── README.md 
+<pre> ``` News_Recommendation_system/ ├── app.py # Flask app with routes and UI ├── recommender.py # Model loading and recommendation logic ├── preprocess.py # Dataset extraction and preprocessing ├── requirements.txt # List of dependencies ├── README.md # Project documentation ├── user_data.json # Stores user likes, dislikes, bookmarks ├── data/ # Folder for preprocessed data │ ├── news_preprocessed.csv # Cleaned and tokenized articles │ ├── news_embeddings.pkl # Embeddings for content-based filtering │ └── news_keywords.pkl # Extracted keywords for keyword-based matching ``` </pre>
