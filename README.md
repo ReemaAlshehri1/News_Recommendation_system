@@ -4,9 +4,9 @@ This AI-powered system recommends personalized news articles to users based on t
 
 ## Features
 1. **Dual Recommendation Models**:  
-   - *Content-Based Filtering* using Sentence Transformers  
-   - *Keyword-Based Matching* using KeyBERT  
-2.Real-Time Personalized Recommendations
+   - Content-Based Filtering* using Sentence Transformers  
+   - Keyword-Based Matching using KeyBERT  
+2.**Real-Time Personalized Recommendations**:
    - Recommends top 5 relevant news articles based on user input and preferences
 3. **Interactive Web Interface**:  
    - Built with Flask and styled with TailwindCSS  
@@ -19,7 +19,8 @@ This AI-powered system recommends personalized news articles to users based on t
 
 ## How to run
 1. Clone the repository:
-   git clone https://github.com/your-username/news-recommender.git
+   git clone https://github.com/ReemaAlshehri/News_Recommendation_system
+.git
    cd news-recommender
 2. Install dependencies:
    pip install -r requirements.txt
@@ -47,8 +48,8 @@ news-recommender/
 │
 ├── data/                 # Folder for preprocessed data
 │   ├── news_preprocessed.csv
-│   ├── news_embeddings.pkl
-│   ├── news_keywords.pkl
+│   ├── news_embeddings.pkl # To use by Content-Based Filtering
+│   ├── news_keywords.pkl # To use by Keyword-Based Matching 
 │
 ├── user_data.json        # Stores user likes, dislikes, bookmarks
 ├── requirements.txt      # List of dependencies
