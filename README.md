@@ -4,7 +4,7 @@ This AI-powered system recommends personalized news articles to users based on t
 
 ## Features
 1. **Dual Recommendation Models**:  
-   - Content-Based Filtering* using Sentence Transformers  
+   - Content-Based Filtering using Sentence Transformers  
    - Keyword-Based Matching using KeyBERT  
 2. **Real-Time Personalized Recommendations**:
    - Recommends top 5 relevant news articles based on user input and preferences
@@ -12,7 +12,7 @@ This AI-powered system recommends personalized news articles to users based on t
    - Built with Flask and styled with TailwindCSS  
    - Hosted via ngrok for public access in Colab or local environments  
 4. **User Behavior Tracking**:  
-   - Users can **like**, **dislike**, or **bookmark** news articles  
+   - Users can like, dislike, or **bookmark** news articles  
    - Feedback is saved in user_data.json and used to improve future recommendations  
 5. **System Performance Dashboard**:  
    - Admin can monitor satisfaction rate based on user feedback  
